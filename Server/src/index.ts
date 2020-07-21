@@ -4,6 +4,7 @@ import cors from 'cors';
 
 import indexRoutes from "./routes/indexRoutes";
 import UsuariosRoutes from "./routes/UsuariosRoutes";
+import JustificantesRoutes from "./routes/JustificantesRoutes";
 
 class Server{
     public app: Application;
@@ -24,6 +25,7 @@ class Server{
     routes() : void {
         this.app.use('/',indexRoutes);
         this.app.use('/api/Usuarios',UsuariosRoutes);
+        this.app.use('/api/Justificantes', JustificantesRoutes);
     }
 
     star() : void {

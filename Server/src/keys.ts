@@ -2,8 +2,8 @@ export default{
     database:{
         host:'localhost',
         user:'root',
-        password:'123456',
-        port:3308,
+        password:'password',
+        port:3306,
         database:'sajiut'
         
     }
